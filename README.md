@@ -28,7 +28,7 @@ docker build -t custom-waf:latest ./images/modsec
 ## Deploying the Lab
 Open Containerlabs and navigate to the downloaded YAML file, then run the following command:
 ```
-sudo containerlab deploy -t topology.clab.yml
+sudo containerlab deploy -t lab.clab.yml
 ```
 
 ## Testing the ModSecurity rules
@@ -65,5 +65,5 @@ docker exec -it clab-modsec-php-lab-attacker curl -i -X POST "http://10.0.1.3:80
 ## Destroying the Lab
 Once you've finished with the lab, run the following command to destroy and clean-up:
 ```
-sudo containerlab destroy -t topology.clab.yml
+sudo containerlab destroy -t lab.clab.yml
 ```
